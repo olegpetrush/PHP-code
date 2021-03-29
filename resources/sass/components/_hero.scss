@@ -1,0 +1,111 @@
+.hero {
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(8, 194, 94, 0.59), rgba(8, 194, 94, 0.59)), linear-gradient(115deg, #102f7a, #1999e3 96%);
+    .bg {
+        position: relative;
+        h1, h2, p {
+            color: $white;
+        }
+        &:before {
+            content: '';
+            background-image: url('../../images/circle-top.svg');
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    &.hero-big {
+        overflow: hidden;
+        .bg {
+            &:after {
+                content: '';
+                background-image: url('../../images/circle-bottom.svg');
+                background-size: cover;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+            p {
+                line-height: 28.5px;
+            }
+        }
+    }
+    &.hero-small {
+        .bg {
+            &:after {
+                content: '';
+                background-image: url('../../images/circle-bottom-2.svg');
+                background-size: cover;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
+        form {
+            label {
+                color: $white;
+            }
+            small {
+                color: $white;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .hero {
+        .bg {
+            &:before {
+                width: 200px;
+                height: 70px;
+            }
+        }
+        &.hero-big {
+            border-bottom-left-radius: 100% 20%;
+            border-bottom-right-radius: 100% 20%;
+            .bg {
+                &:after {
+                    width: 110px;
+                    height: 74px;
+                }
+            }
+        }
+        &.hero-small {
+            .bg {
+                &:after {
+                    width: 100px;
+                    height: 34px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 992px)  {
+    .hero {
+        .bg {
+            &:before {
+                width: 367px;
+                height: 129px;
+            }
+        }
+        &.hero-big {
+            border-bottom-left-radius: 70% 20%;
+            border-bottom-right-radius: 70% 20%;
+            .bg {
+                &:after {
+                    width: 243px;
+                    height: 163px;
+                }
+            }
+        }
+        &.hero-small {
+            .bg {
+                &:after {
+                    width: 227px;
+                    height: 77px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.clients {
+    span {
+        color: $gray-6;
+    }
+}
+
+@media (max-width: 991px) {
+    .clients {
+        .slider {
+            .slick-slide {
+                img {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 992px)  {
+    .clients {
+        .slider {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

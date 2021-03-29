@@ -1,0 +1,15 @@
+.instructions {
+    h5 {
+        border-bottom: 1px solid $gray-2;
+    }
+    h6 {
+        text-decoration: underline;
+    }
+    ul {
+        li {
+            &:not(:last-child) {
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="227" height="77" viewBox="0 0 227 77">
+    <defs>
+        <linearGradient id="bnijxi873a" x1="6.631%" x2="96.691%" y1="26.596%" y2="66.302%">
+            <stop offset="0%" stop-color="#08C25E"/>
+            <stop offset="100%" stop-color="#07AA52"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g fill="url(#bnijxi873a)" transform="translate(-977 -335)">
+            <circle cx="1090.5" cy="457" r="121.5"/>
+        </g>
+    </g>
+</svg>

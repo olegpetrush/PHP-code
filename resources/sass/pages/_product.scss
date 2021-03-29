@@ -1,0 +1,134 @@
+.product {
+    border-bottom: 6px solid $gray-1;
+    .breadcrumbs {
+        li {
+            position: relative;
+            display: inline;
+            color: $black;
+            a {
+                color: $black;
+            }
+            &:not(:last-child) {
+                &:after {
+                    content: '/';
+                    margin: 0 0.25rem 0 0.5rem;
+                }
+            }
+        }
+    }
+    .rating {
+        .stars {
+            float: left;
+            li {
+                display: inline-block;
+                float: left;
+                line-height: 16px;
+            }
+        }
+        span {
+            float: left;
+            font-size: 15px;
+            margin-left: 0.5rem;
+        }
+    }
+    .features {
+        li {
+            position: relative;
+            padding-left: 1.5rem;
+            &:before {
+                content: '';
+                width: 16px;
+                height: 16px;
+                background-image: url('../../images/checkbox-checked.svg');
+                background-size: cover;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translate(0, -50%);
+            }
+        }
+    }
+    .accordion {
+        .card {
+            .card-header {
+                position: relative;
+                button {
+                    background-color: $white;
+                    border: 0;
+                    padding: 0;
+                    outline: 0;
+                    &:after {
+                        content: '';
+                        background-image: url('../../images/toggle-close.svg');
+                        background-size: cover;
+                        background-position: center center;
+                        width: 16px;
+                        height: 2px;
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        transform: translate(-50%, -50%);
+                    }
+                    &.collapsed {
+                        &:after {
+                            content: '';
+                            background-image: url('../../images/toggle-open.svg');
+                            width: 16px;
+                            height: 17px;
+                        }
+                    }
+                }
+            }
+            .card-body {
+                border-top: 1px solid $gray-3;
+            }
+            &:not(:last-child) {
+                border-bottom: 1px solid $gray-3;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+    .product {
+        .features {
+            li {
+
+            }
+        }
+        .accordion {
+            .card {
+                .card-header {
+                    padding: 1rem 0;
+                }
+                .card-body {
+                    padding: 1rem 0;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 768px) {
+    .product {
+        .features {
+            li {
+                display: inline-block;
+                float: left;
+                &:not(:last-child) {
+                    margin-right: 1rem;
+                }
+            }
+        }
+        .accordion {
+            .card {
+                .card-header {
+                    padding: 1.5rem 0;
+                }
+                .card-body {
+                    padding: 1.5rem 0;
+                }
+            }
+        }
+    }
+}

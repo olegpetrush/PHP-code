@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+    <defs>
+        <filter id="0cv46cvfja" width="125%" height="125%" x="-12.5%" y="-6.2%" filterUnits="objectBoundingBox">
+            <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.0745098039 0 0 0 0 0.121568627 0 0 0 0 0.0823529412 0 0 0 0.1 0"/>
+        </filter>
+        <filter id="qut7njhwvc" width="125%" height="125%" x="-12.5%" y="-6.2%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetInner1"/>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
+            <feColorMatrix in="shadowInnerInner1" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.06 0"/>
+        </filter>
+        <rect id="js3xgodn0b" width="16" height="16" x="0" y="0" rx="4"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g>
+                    <g>
+                        <g transform="translate(-283 -478) translate(284 242) translate(0 233) translate(0 3)">
+                            <use fill="#000" filter="url(#0cv46cvfja)" xlink:href="#js3xgodn0b"/>
+                            <use fill="#08C25E" xlink:href="#js3xgodn0b"/>
+                            <use fill="#000" filter="url(#qut7njhwvc)" xlink:href="#js3xgodn0b"/>
+                            <rect width="15" height="15" x=".5" y=".5" stroke="#07AA52" stroke-linejoin="square" rx="4"/>
+                        </g>
+                        <path fill="#FFF" d="M6.652 10.894L4.106 8.331c-.141-.14-.141-.37 0-.513l.515-.512c.141-.141.372-.141.514 0L6.909 9.1l3.956-3.994c.142-.14.372-.14.514 0l.514.513c.142.141.142.371 0 .512l-4.727 4.763c-.142.141-.372.141-.514 0" transform="translate(-283 -478) translate(284 242) translate(0 233) translate(0 3)"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

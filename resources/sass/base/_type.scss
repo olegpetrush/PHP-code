@@ -1,0 +1,90 @@
+.font-bold {
+    font-family: $font-bold;
+}
+.font-book {
+    font-family: $font-book;
+}
+.font-medium {
+    font-family: $font-medium;
+}
+
+
+
+//
+// Headings
+//
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: $headings-margin-bottom;
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  color: $headings-color;
+}
+
+h1, .h1 {
+    font-size: 38px;
+}
+h2, .h2 {
+    font-size: 32px;
+}
+h3, .h3 {
+    font-size: 30px;
+}
+h4, .h4 {
+    font-size: 24px;
+}
+h5, .h5 {
+    font-size: 20px;
+}
+h6, .h6 {
+    font-size: 17px;
+}
+
+@media (min-width: 992px)  {
+    h1, .h1 {
+        font-size: 60px;
+    }
+    h2, .h2 {
+        font-size: 40px;
+    }
+}
+
+
+//
+// Emphasis
+//
+
+small,
+.small {
+  @include font-size($small-font-size);
+  font-weight: $font-weight-normal;
+}
+
+mark,
+.mark {
+  padding: $mark-padding;
+  background-color: $mark-bg;
+}
+
+
+//
+// Lists
+//
+
+.list-unstyled {
+  @include list-unstyled();
+}
+
+// Inline turns list items into inline-block
+.list-inline {
+  @include list-unstyled();
+}
+.list-inline-item {
+  display: inline-block;
+
+  &:not(:last-child) {
+    margin-right: $list-inline-padding;
+  }
+}
